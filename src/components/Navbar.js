@@ -4,7 +4,7 @@ import Heading from "./Heading";
 function Navbar() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg bg-light">
+      {/* <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             Navbar
@@ -43,6 +43,15 @@ function Navbar() {
             </ul>
           </div>
         </div>
+      </nav> */}
+      <nav>
+        <h1>This is navbar</h1>
+        <ul>
+          <li>Abdullah</li>
+          <li>Muhammad</li>
+          <li>Mirza</li>
+          <li>Baig</li>
+        </ul>
       </nav>
     <Heading/>
     </>
