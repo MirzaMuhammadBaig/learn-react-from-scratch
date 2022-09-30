@@ -1,4 +1,5 @@
 import React from "react";
+import Heading from "./Heading";
 
 function Navbar() {
   return (
@@ -43,6 +44,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
+    <Heading/>
     </>
   );
 }
