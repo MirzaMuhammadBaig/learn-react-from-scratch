@@ -1,19 +1,26 @@
 import React from "react";
-import  Time from "./components/Time"
-import  PracticeOfProp from './components/PracticeOfProp'
-import PassingContent from "./components/PassingContent";
-import PassDataInCard from "./components/PassDataInCard";
-import MyImg from './img/logo192.png'
-import MyImg2 from './img/FirstProject.jpeg'
-import Map1 from './components/Map1'
-import Map2 from './components/Map2'
-import Map3 from './components/Map3'
+import Project2Nav from './components/Project2Nav'
+import Project2Main from './components/Project2Main'
+import Project2Body from './components/Project2Body'
+
+// import  Time from "./components/Time"
+// import  PracticeOfProp from './components/PracticeOfProp'
+// import PassingContent from "./components/PassingContent";
+// import PassDataInCard from "./components/PassDataInCard";
+// import MyImg from './img/logo192.png'
+// import MyImg2 from './img/FirstProject.jpeg'
+// import Map1 from './components/Map1'
+// import Map2 from './components/Map2'
+// import Map3 from './components/Map3'
 
 function App() {
 
   return (
     <>
-    <Time/>
+    <Project2Nav/>
+    <Project2Main/>
+    <Project2Body/>
+    {/* <Time/>
     <PracticeOfProp
     img = {MyImg}
     name = 'React-1'
@@ -65,7 +72,7 @@ function App() {
     />
   <Map1/>
   <Map2/>
-  <Map3/>
+  <Map3/> */}
     </>
   );
 }
