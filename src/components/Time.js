@@ -21,6 +21,7 @@ function Time() {
         Good {timeOfDay} 
         <br></br>
         It's {hours} o'clock
+        <hr/>
     </>
   )
 }
