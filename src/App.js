@@ -1,10 +1,9 @@
 import React from "react";
-import FirstProject from "./components/FirstProject";
-
+import  Time from "./components/Time"
 function App() {
   return (
     <>
-    <FirstProject/>
+    <Time/>
     </>
   );
 }
