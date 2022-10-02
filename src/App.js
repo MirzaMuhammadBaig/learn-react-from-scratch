@@ -8,11 +8,18 @@ import MyImg2 from './img/FirstProject.jpeg'
 import Map1 from './components/Map1'
 import Map2 from './components/Map2'
 import Map3 from './components/Map3'
+import Lines from "./components/Lines";
+import LineData from "./components/LineData";
 
 function App() {
 
+  const LinesElements = LineData.map((line => {
+    return <Lines FirstLine={line.FirstLine} SecondLine = {line.SecondLine}/>
+  }))
+
   return (
     <>
+    {LinesElements}
     <Time/>
     <PracticeOfProp
     img = {MyImg}
@@ -43,12 +50,12 @@ function App() {
     content = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus velit dicta numquam consequuntur magni modi tempora perferendis, consectetur vel quos maiores, enim possimus atque labore commodi ut quod? Facilis laborum magni esse labore incidunt adipisci fugiat, corporis soluta omnis eveniet impedit nihil error.'
     />
     <PassingContent
-    // heading = 'Muhammad is a nice guy'
+    heading = 'Muhammad is a nice guy'
     content = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus velit dicta numquam consequuntur magni modi tempora perferendis, consectetur vel quos maiores, enim possimus atque labore commodi ut quod? Facilis laborum magni esse labore incidunt adipisci fugiat, corporis soluta omnis eveniet impedit nihil error.'
     />
     <PassingContent
     heading = 'Kashan is a nice guy'
-    // content = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus velit dicta numquam consequuntur magni modi tempora perferendis, consectetur vel quos maiores, enim possimus atque labore commodi ut quod? Facilis laborum magni esse labore incidunt adipisci fugiat, corporis soluta omnis eveniet impedit nihil error.'
+    content = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus velit dicta numquam consequuntur magni modi tempora perferendis, consectetur vel quos maiores, enim possimus atque labore commodi ut quod? Facilis laborum magni esse labore incidunt adipisci fugiat, corporis soluta omnis eveniet impedit nihil error.'
     />
     <PassingContent
     heading = 'Haider is a nice guy'
