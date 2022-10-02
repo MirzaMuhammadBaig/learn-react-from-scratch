@@ -8,18 +8,11 @@ import MyImg2 from './img/FirstProject.jpeg'
 import Map1 from './components/Map1'
 import Map2 from './components/Map2'
 import Map3 from './components/Map3'
-import Lines from "./components/Lines";
-import LineData from "./components/LineData";
 
 function App() {
 
-  const LinesElements = LineData.map((line => {
-    return <Lines FirstLine={line.FirstLine} SecondLine = {line.SecondLine}/>
-  }))
-
   return (
     <>
-    {LinesElements}
     <Time/>
     <PracticeOfProp
     img = {MyImg}
