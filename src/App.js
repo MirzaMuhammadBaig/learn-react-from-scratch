@@ -1,9 +1,8 @@
-import SmallWeb from './components/SmallWeb'
+import React from "react";
 
 function App() {
   return (
     <>
-      <SmallWeb/>
     </>
   );
 }
