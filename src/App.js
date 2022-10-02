@@ -5,6 +5,9 @@ import PassingContent from "./components/PassingContent";
 import PassDataInCard from "./components/PassDataInCard";
 import MyImg from './img/logo192.png'
 import MyImg2 from './img/FirstProject.jpeg'
+import Map1 from './components/Map1'
+import Map2 from './components/Map2'
+import Map3 from './components/Map3'
 
 function App() {
 
@@ -60,7 +63,9 @@ function App() {
       thirdSpan = "From $136"
       fourthSpan = " / person "
     />
-
+  <Map1/>
+  <Map2/>
+  <Map3/>
     </>
   );
 }
