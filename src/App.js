@@ -1,7 +1,5 @@
 import React from "react";
-import Project2Nav from './components/Project2Nav'
-import Project2Main from './components/Project2Main'
-import Project2Body from './components/Project2Body'
+import Project2Card from './components/Project2Card'
 
 // import  Time from "./components/Time"
 // import  PracticeOfProp from './components/PracticeOfProp'
@@ -17,9 +15,7 @@ function App() {
 
   return (
     <>
-    <Project2Nav/>
-    <Project2Main/>
-    <Project2Body/>
+    <Project2Card/>
     {/* <Time/>
     <PracticeOfProp
     img = {MyImg}
