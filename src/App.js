@@ -13,6 +13,8 @@ import Map1 from './components/Map1'
 import Map2 from './components/Map2'
 import Map3 from './components/Map3'
 import ForUseState from "./components/ForUseState";
+import ForUseState2 from "./components/ForUseState2";
+import PushNumberInThings from "./components/PushNumberInThings";
 
 function App() {
 
@@ -92,6 +94,8 @@ function App() {
   <Map2/>
   <Map3/>
   <ForUseState/>
+  <ForUseState2/>
+  <PushNumberInThings/>
     </>
   );
 }
