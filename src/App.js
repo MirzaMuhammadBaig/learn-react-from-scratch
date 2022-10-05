@@ -15,8 +15,50 @@ import Map3 from './components/Map3'
 import ForUseState from "./components/ForUseState";
 import ForUseState2 from "./components/ForUseState2";
 import PushNumberInThings from "./components/PushNumberInThings";
+import boxes from "./components/boxes";
+import Box from "./components/Box";
 
 function App() {
+
+  const [squares, setSquares] = React.useState(boxes)
+
+  function toggle (id){
+
+    setSquares(squares => {
+      return squares.map((square) => {
+        return square.id === id ? {...square, on: !square.on} : square
+      })
+    })
+    
+    // setSquares(preSquares => {
+    //   const newSquares = []
+    //   for(let i = 0; i < preSquares.length; i++){
+    //     const currentSqaure = preSquares[i]
+    //     if(currentSqaure.id === id){
+    //       const updateSquare = {
+    //         ...currentSqaure,
+    //         on : !currentSqaure.on
+    //       }
+    //       newSquares.push(updateSquare)
+    //     }
+    //     else {
+    //       newSquares.push(currentSqaure)
+    //     }
+    //   }
+    //   return newSquares
+    // })
+
+  }
+
+  const squareElement = squares.map(item => (
+    <Box 
+       key = {item.id}
+       id = {item.id}
+       on = {item.on}
+       toggle = {() => toggle(item.id)}
+    />
+  ))
+
 
   // const cards = Project2Data.map(item => {
   //   return (
@@ -36,6 +78,7 @@ function App() {
 
   return (
     <>
+    {squareElement}
       <Project2Body/>
       {/* <section>
       {cards}
@@ -96,6 +139,9 @@ function App() {
   <ForUseState/>
   <ForUseState2/>
   <PushNumberInThings/>
+  <div>
+  <squreElements/>
+  </div>
     </>
   );
 }
