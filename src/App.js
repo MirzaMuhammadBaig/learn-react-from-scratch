@@ -17,6 +17,7 @@ import ForUseState2 from "./components/ForUseState2";
 import PushNumberInThings from "./components/PushNumberInThings";
 import boxes from "./components/boxes";
 import Box from "./components/Box";
+import Message from "./components/Message";
 
 function App() {
 
@@ -78,6 +79,7 @@ function App() {
 
   return (
     <>
+    <Message/>
     {squareElement}
       <Project2Body/>
       {/* <section>
